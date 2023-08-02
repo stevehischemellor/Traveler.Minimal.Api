@@ -13,4 +13,12 @@
     <Folder Include="Requests\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <EditorConfigFiles Remove="C:\Users\Steve\source\repos\Traveler.Minimal.Api\Traveler.Minimal.Api\.editorconfig" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="C:\Users\Steve\source\repos\Traveler.Minimal.Api\Traveler.Minimal.Api\.editorconfig" />
+  </ItemGroup>
+
 </Project>
