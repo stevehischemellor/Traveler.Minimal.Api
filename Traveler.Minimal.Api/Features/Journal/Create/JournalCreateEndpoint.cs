@@ -6,8 +6,7 @@ namespace Traveler.Minimal.Api.Features.Journal.Create
     {
         public override void Configure()
         {
-            Post("/api/jounral/create");
-            AllowAnonymous();
+            Post("/api/journal/create");            
         }
 
         public override async Task HandleAsync(JournalCreateRequest req, CancellationToken ct)

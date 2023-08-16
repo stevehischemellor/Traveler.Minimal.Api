@@ -15,8 +15,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Features\Entry\" />
-    <Folder Include="Features\Image\" />
+    <Folder Include="Features\Image\Create\" />
+    <Folder Include="Features\Image\Get\" />
+    <Folder Include="Features\Image\Delete\" />
   </ItemGroup>
 
   <ItemGroup>
