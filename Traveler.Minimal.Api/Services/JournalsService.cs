@@ -1,14 +1,11 @@
 ﻿using Microsoft.Extensions.Options;
-using MongoDB.Driver;
 using Traveler.Minimal.Api.Data;
-using Traveler.Minimal.Api.Features.Journal.Models;
+using Traveler.Minimal.Api.Features.Models;
 
 namespace Traveler.Minimal.Api.Services
-{ 
+{
     public class JournalsService
     {
-        private readonly IMongoCollection<Journal> _journalsCollection;
-
         public JournalsService(
             IOptions<DatabaseSettings> databaseSettings)
         {

@@ -1,20 +1,25 @@
-global using FastEndpoints;
-using Traveler.Minimal.Api.Data;
-using Traveler.Minimal.Api.Services;
 
-// implement REPR pattern
+using Traveler.Minimal.Api.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
-builder.Services.AddFastEndpoints();
-
-builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("JournalsDatabase"));
-builder.Services.AddSingleton<JournalsService>();
+builder.Services.AddScoped<JournalsService>();
 
 var app = builder.Build();
 
-app.MapGet("/", (IHttpClientFactory httpClientFactory) => "Hello World!");
 
-app.UseFastEndpoints();
+app.MapPost("/", () => "Hello World!");
+
+
 
 app.Run();
+
+
+//builder.Services.AddAuthentication();
+
+//var app = builder.Build();
+
+//app.UseAuthentication();
+//app.UseAuthorization();
+
+//app.Run();

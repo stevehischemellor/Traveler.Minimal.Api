@@ -2,5 +2,6 @@
 {
     public class JournalCreateResponse
     {
+        public string Result { get; set; } = null!;
     }
 }
